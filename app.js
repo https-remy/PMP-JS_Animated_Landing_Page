@@ -39,3 +39,47 @@ function slideDown(e) {
 		behavior: 'smooth',
 	});
 }
+
+const animatedElements = [
+	...document.querySelectorAll('h2'), 
+	...document.querySelectorAll('.section-subtitle')
+];
+
+const discoverSectionElements = [
+	document.querySelector('.text-discover-content h3'),
+	document.querySelector('.text-discover-content p'),
+	document.querySelector('.discover-link'),
+	document.querySelector('.discover-main-img'),
+	document.querySelector('.discover-section h2'),
+	document.querySelector('.discover-subtitle'),
+];
+
+const slideInContent = [
+	...document.querySelectorAll(".side-apparition-container"),
+]
+
+const animateElements = [
+	...animatedElements,
+	...discoverSectionElements,
+	...slideInContent,
+]
+
+const intersectionObserver = new IntersectionObserver(handleIntersection, {
+	rootMargin: "-10%",
+});
+
+animateElements.forEach(element => {
+	intersectionObserver.observe(element);
+});
+
+function handleIntersection(entries) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('active');
+		} else {
+			if (!discoverSectionElements.includes(entry.target) && !animatedElements.includes(entry.target)) {
+				entry.target.classList.remove('active');
+			}
+		}
+	})
+}

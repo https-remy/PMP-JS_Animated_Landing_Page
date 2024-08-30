@@ -178,8 +178,6 @@ h1::after {
 main.container {
 	max-width: 1100px;
 	margin: 0 auto;
-	border-right: 1px solid #f1f1f14f;
-	border-left: 1px solid #f1f1f14f;
 	padding: 0 clamp(10px, 12vw, 120px);
 	color: #f1f1f1;
 	overflow-x: hidden;
@@ -241,13 +239,44 @@ section h2 span {
 	border: 1px solid #f1f1f168;
 }
 
+.discover-link:hover {
+	background: #292929;
+}
+
 .discover-link img {
 	width: 15px;
+}
+
+.discover-link:hover img {
+	transform: translateX(10px);
 }
 
 .discover-main-img {
 	width: 50%;
 	object-fit: cover;
+	padding-left: 10px;
+}
+
+/* Animations */
+
+h2,
+.section-subtitle,
+.text-discover-content>*,
+.discover-main-img {
+	opacity: 0;
+	transform: translateY(-5px);
+	transition:
+		opacity 0.7s 0.5s ease-out,
+		transform 0.7s 0.5s ease-out;
+}
+
+
+h2.active,
+.section-subtitle.active,
+.text-discover-content>*.active,
+.discover-main-img.active {
+	opacity: 1;
+	transform: translateY(0);
 }
 
 @media (max-width: 1100px) {
@@ -315,7 +344,7 @@ section h2 span {
 .side-apparition-container {
 	transform: translateX(30px) skew(20deg);
 	opacity: 0;
-	transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+	transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 .side-apparition-container:nth-child(odd) {
