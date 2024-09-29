@@ -11,7 +11,7 @@ function handleCustomCursor(e) {
 const title = document.querySelector('h1');
 const subtitle = document.querySelector('.subtitle');
 const discoverLink = document.querySelector('.hero-push-link');
-const txt = 'Porsche, set free.';
+const txt = 'Nike, just do it.';
 
 function typeWriter(text, index) {
 	if (index > 3) subtitle.classList.add('active');

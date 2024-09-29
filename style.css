@@ -80,12 +80,14 @@ nav a:hover::before {
 .hero {
 	height: 100vh;
 	min-height: 700px;
-	border-bottom: 1px solide #f1f1f124;
+	border-bottom: 1px solid #f1f1f124;
 	text-align: center;
 	padding-top: 150px;
 	position: relative;
-	background: url(assets/hero-background.jpg);
+	background: url(assets/nike.webp);
+	background-size: auto;
 	background-position: center;
+	background-repeat: no-repeat;
 }
 
 h1 {
