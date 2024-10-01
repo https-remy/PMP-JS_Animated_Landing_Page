@@ -1,6 +1,6 @@
 # Nike Landing Page
 
-A sleek and modern animated landing page for Nike, created to practice **HTML**, **CSS**, and **JavaScript**. This project focuses on building a visually appealing and interactive web page with subtle animations, smooth transitions, and a clean layout.
+A sleek and modern animated landing page for Nike, created to practice **HTML**, **CSS**, and **JavaScript**. This project focuses on building a visually appealing and interactive web page with subtle animations, smooth transitions, and a clean layout. You can see it [here](https://remyshift.github.io/PMP-JS_Animated_Landing_Page/).
 
 ## Table of Contents
 
@@ -69,7 +69,7 @@ nike-landing-page/
 
 ## Customization
 
-You can modify the content by editing the `index.html` file and adjust styles in the `css/style.css` file. For animations, update the corresponding JavaScript in the `js/animations.js` file.
+You can modify the content by editing the `index.html` file and adjust styles in the `style.css` file. For animations, update the corresponding JavaScript in the `animations.js` file.
 
 ## Contributors
 
