@@ -12,7 +12,6 @@ A sleek and modern animated landing page for Nike, created to practice **HTML**,
 - [Project Structure](#project-structure)
 - [Customization](#customization)
 - [Contributors](#contributors)
-- [License](#license)
 
 ## Introduction
 
